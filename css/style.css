@@ -1,0 +1,290 @@
+
+/* Global rules */
+*{
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+         -o-box-sizing:border-box;
+            box-sizing:border-box
+}
+body{
+    font:16px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#f4f4f4
+}
+.container{
+    width:88%;
+    margin:auto;
+    overflow: hidden
+}
+.button1{
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #c63133
+}
+span{color:#00dab5}
+
+
+/* Start header */
+header{
+    background: #35424a;
+    color:#fff;
+    min-height: 60px;
+    border-bottom: 3px solid #00dab5;
+    text-transform: capitalize
+    
+}
+header .f{overflow: hidden}
+header .brand{float: left; width:50%}
+header .brand h2 a{color:#fff; text-decoration: none}
+header .links{
+    margin-top: 29px;
+    float:left;
+    width:50%;
+    text-align: right
+}
+header .links ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0
+}
+header .links ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 2s ease-in-out
+}
+header .links ul li a:hover{color:#00dab5}
+header .links ul li a{color:#fff; text-decoration: none}
+header .links ul li.active a{color:#00dab5}
+/* End header */
+
+
+/* Start foldline */
+.foldline{
+    min-height: 400px;
+    background:url(../imgs/1.jpg) no-repeat 0 -1147px;
+    text-align: center;
+    color:#fff;
+    position: relative
+}
+.foldline .overlay{}
+.foldline h1{
+    margin-top: 140px;
+    font-size: 55px;
+    margin-bottom: 10px
+}
+.foldline p{
+    font-size: 20px
+}
+/* End foldline */
+
+
+/* Start news letter section */
+.newsletter{
+    overflow: hidden;
+    padding:20px 0;
+    background-color: #35424a;
+    color: white;
+    text-transform: capitalize
+}
+.newsletter h2{float: left; width:50%} 
+.newsletter form{
+    float: left;
+    width:50%;
+    margin-top: 20px;
+    text-align: center
+}
+.newsletter form input[type="email"]{
+    border: 0;
+    padding: 13px 30px;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+/* End news letter section */
+
+
+/* Start skills section */
+.WWD{
+    padding:50px 0;
+    overflow: hidden;
+    color:#808080;
+    text-align: center
+}
+.WWD .skill{
+    float: left;
+    width:33.333%;
+    padding: 0 30px
+}
+.WWD .skill img{width:100%; border-radius: 5px}
+.WWD .skill h3{color:#02c1a1}
+
+/* End skills section */
+
+/*Start About page*/
+.about article h1,
+.about article h2{
+    font-size: 22px;
+    color: #35424a;
+    margin-bottom: 4px
+}
+.about article p{
+    color: #a09d9d;
+    margin-top: 3px;
+    margin-bottom: 3px
+}
+.free-area{margin-bottom: 76px}
+/*End About page*/
+
+
+/*Start services page*/
+.services{overflow: hidden}
+.our-services{padding:50px 0; float: left; width:60%}
+aside{
+    padding:50px 0;
+    float: left;
+    background-color: #35424a;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 100px;
+    margin-bottom: 20px
+}
+aside input{
+    border: 0;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px
+}
+aside form input,
+aside form textarea{
+    display: block;
+}
+aside form textarea{
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px
+}
+.our-services ul{
+    list-style-type: none
+    
+}
+.our-services ul li{
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #bdbdbd;
+    background-color: #fff;
+    margin-bottom: 5px
+}
+.services h1,
+.our-services services h3
+{
+    font-size: 22px;
+    color: #35424a;
+    margin-bottom: 4px
+}
+.services h3{font-size: 18px}
+.services aside h3 {   
+    font-size: 20px;
+    color: #00dab5
+}
+
+.services h1{
+    color:#00dab5;
+    margin-left: 37px;
+    font-size: 35px
+}
+
+.our-services p{
+    color: #a09d9d;
+    margin-top: 3px;
+    margin-bottom: 3px
+}
+/*End services page*/
+
+/* Start footer section */
+
+footer{
+    padding: 5px 0;
+    background-color: #02c1a1;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600
+}
+/* End footer section */
+
+
+/*Start media quires*/
+@media(max-width:750px){
+    .foldline h1{
+        margin-top: 100px;
+        font-size: 46px
+    }
+    .foldline p{
+        font-size: 18px
+    }
+    .WWD .skill{
+        float: left;
+        width:50%;
+        padding: 0 30px;
+        margin-bottom: 40px
+    }
+    .newsletter h2{font-size: 17px}
+    .newsletter form input[type="email"]{padding: 7px 8px; margin-bottom: 10px}
+    .button1{padding: 7px 20px}
+    .our-services{float: none; width:100%}
+    .services h1{margin-left: 20px}
+    .services ul{padding: 0 20px}
+    aside{
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px
+    }
+}
+
+
+@media(max-width:500px){
+    header .brand{
+        float: none;
+        width:100%;
+        text-align: center;
+        font-size: 15px
+    }
+    header .links{
+        margin-top: 10px;
+        float:none;
+        width:100%;
+        text-align: center;
+        margin-bottom: 19px
+    }
+    .foldline{min-height: 250px}
+    .foldline h1{
+        margin-top: 50px;
+        font-size: 33px
+    }
+    .foldline p{
+        font-size: 16px
+    }
+    .WWD .skill{
+        float: none;
+        width:100%;
+        padding: 0 30px
+    }
+    .newsletter{text-align: center}
+    .newsletter h2{font-size: 17px; float: none; width:100%}
+    .newsletter form{ float: none; width:100%}
+    .newsletter form input[type="email"]{padding: 7px 8px; float: none; width:80%; margin-bottom: 5px}
+    .button1{padding: 7px 20px;  float: none; width:80%}
+    aside{width:90%; margin:10px auto;}
+    footer{font-size: 11px}
+}
+/*End media quires*/
+
+
+
+
+
